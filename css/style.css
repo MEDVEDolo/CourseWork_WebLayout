@@ -1,0 +1,87 @@
+@font-face {
+	font-family: 'Open Sans';
+	src: url('../fonts/opensans-regular.woff2') format('woff2'),
+		url('../fonts/opensans-regular.woff') format('woff');
+	font-display: swap;
+	font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	src: url('../fonts/opensans-semibold.woff2') format('woff2'),
+		url('../fonts/opensans-semibold.woff') format('woff');
+	font-display: swap;
+	font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	src: url('../fonts/opensans-bold.woff2') format('woff2'),
+		url('../fonts/opensans-bold.woff') format('woff');
+	font-display: swap;
+	font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Open Sans';
+  font-size: 16px;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+.container {
+  max-width: 1560px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.link {
+  color: #9D5CD0;
+  text-decoration: none;
+}
+
+.header {
+  color: #fff;
+  background-color: #000;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  padding: 30px 20px;
+}
+
+.logo {
+  display: block;
+  margin-right: 180px;
+}
+
+.nav__list {
+  display: flex;
+}
+
+.nav__item:not(:last-child) {
+  margin-right: 62px;
+}
+
+.nav__link {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 25px;
+}
+
+.entry {
+  margin-left: auto;
+  padding-left: 20px;
+  color: #fff;
+  background-image: url(../img/entry.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+}
