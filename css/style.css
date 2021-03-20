@@ -25,18 +25,23 @@
   font-style: normal;
 }
 
+* {
+  box-sizing: border-box
+}
+
 body {
   font-family: 'Open Sans';
   font-size: 16px;
 }
 
 ul {
+  margin: 0;
   padding: 0;
   list-style: none;
 }
 
 .container {
-  max-width: 1560px;
+  max-width: 1642px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -54,7 +59,7 @@ ul {
 .header__container {
   display: flex;
   align-items: center;
-  padding: 30px 20px;
+  padding: 28px 20px;
 }
 
 .logo {
@@ -67,7 +72,7 @@ ul {
 }
 
 .nav__item:not(:last-child) {
-  margin-right: 62px;
+  margin-right: 62.4px;
 }
 
 .nav__link {
@@ -81,6 +86,8 @@ ul {
   margin-left: auto;
   padding-left: 20px;
   color: #fff;
+  font-size: 18px;
+  line-height: 25px;
   background-image: url(../img/entry.svg);
   background-repeat: no-repeat;
   background-position: left center;
