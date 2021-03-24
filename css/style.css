@@ -51,6 +51,11 @@ ul {
   text-decoration: none;
 }
 
+.btn_img {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+
 .header {
   color: #fff;
 }
@@ -111,7 +116,7 @@ ul {
 }
 
 .styleMenu__item {
-  padding-right: 13px;
+  padding-right: 14px;
   background-image: url(../img/icon-arrow.svg);
   background-repeat: no-repeat;
   background-position: 100% 60%;
@@ -125,4 +130,26 @@ ul {
   color: #fff;
   font-size: 18px;
   line-height: 25px;
+}
+
+.search {
+  margin-left: auto;
+}
+
+.btn_img_search {
+  width: 30px;
+  height: 30px;
+  background-image: url(../img/search.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.search__input {
+  background: transparent;
+  border: none;
+  border-bottom: rgba(255, 255, 255, 0.85) solid 1px;
+}
+
+.search__input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.85);
 }
