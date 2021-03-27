@@ -112,25 +112,66 @@ ul {
   padding: 23px 20px 21px 20px;
 }
 
-.styleMenu {
+.style-menu {
   display: flex;
 }
 
-.styleMenu__item {
+.style-menu__item {
+  position: relative;
+  width: 100%;
   padding-right: 14px;
   background-image: url(../img/icon-arrow.svg);
   background-repeat: no-repeat;
   background-position: 100% 60%;
 }
 
-.styleMenu__item:not(:last-child) {
+.style-menu__item:not(:last-child) {
   margin-right: 97px;
 }
 
-.styleMenu__link {
+.style-menu__btn {
+  padding: 0;
+  color: #fff;
+  font-size: 18px;
+  line-height: 25px;  
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.style-menu__btn:active,
+.style-menu__btn:focus {
+  outline: none;
+}
+
+.style-menu__link {
   color: #fff;
   font-size: 18px;
   line-height: 25px;
+}
+
+.style-menu__submenu {
+  position: absolute;
+  top: 184%;
+  width: inherit;
+  visibility: hidden;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  transition-property: opacity;
+  -webkit-transition: .6s ease-in;
+}
+
+.style-menu__submenu_is-active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.style-menu__item:hover .style-menu__submenu {
+  visibility: visible;
+  opacity: 1;
+}
+
+.style-menu__submenu__item {
+  padding: 10px 20px;
 }
 
 .search {
