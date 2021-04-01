@@ -118,7 +118,6 @@ ul {
 
 .style-menu__item {
   position: relative;
-  max-height: 25px;
   padding-right: 14px;
   background-image: url(../img/icon-arrow.svg);
   background-repeat: no-repeat;
@@ -149,9 +148,9 @@ ul {
   line-height: 25px;
 }
 
-.style-menu__submenu {
+.submenu {
   position: absolute;
-  top: 184%;
+  top: 185%;
   padding: 40px;
   visibility: hidden;
   opacity: 0;
@@ -160,12 +159,29 @@ ul {
   -webkit-transition: .6s ease-in;
 }
 
-.style-menu__submenu_is-active {
+.style-menu__submenu {
+  width: 300px;
+  height: 300px;
+  padding: 40px;
+}
+
+.simplebar-track.simplebar-vertical {
+  width: 5px;
+  background-color: #000;
+}
+
+.simplebar-scrollbar:before {
+  height: 28px;
+  opacity: 1 !important;
+  background-color: #fff !important;
+}
+
+.submenu_is-active {
   visibility: visible;
   opacity: 1;
 }
 
-.style-menu__item:hover .style-menu__submenu {
+.style-menu__item:hover .submenu {
   visibility: visible;
   opacity: 1;
 }
