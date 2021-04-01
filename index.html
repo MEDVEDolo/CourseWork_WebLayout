@@ -15,7 +15,11 @@
 
   <link rel="stylesheet" href="css/normalize.css">
 
+  <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css"/>
+
   <script src="scripts/dropdown-menu.js"></script>
+
+  <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
 </head>
 
 <body>
@@ -68,25 +72,45 @@
           <li class="style-menu__item">
             <button class="style-menu__btn">Реализм</button> 
             
-            <ul class="style-menu__submenu">
-              <li class="style-menu__submenu__item">
-                <a href="" class="link style-menu__link">Item1</a>
-              </li>
-              <li class="style-menu__submenu__item">
-                <a href="" class="link style-menu__link">Item2</a>
-              </li>
-            </ul>
+            <div class="submenu">
+              <ul class="style-menu__submenu" data-simplebar>
+                <li class="style-menu__submenu__item style-menu__submenu__item_tintoretto">
+                  <a href="" class="link style-menu__link">Тинторетто</a>
+                </li>
+  
+                <li class="style-menu__submenu__item style-menu__submenu__item_frederick">
+                  <a href="" class="link style-menu__link">Фридрих</a>
+                </li>
+  
+                <li class="style-menu__submenu__item style-menu__submenu__item_leonardo">
+                  <a href="" class="link style-menu__link">Леонардо</a>
+                </li>
+  
+                <li class="style-menu__submenu__item style-menu__submenu__item_verrocchio">
+                  <a href="" class="link style-menu__link">Верроккьо</a>
+                </li>
+              </ul>
+            </div>
           </li>
 
           <li class="style-menu__item">
             <button class="style-menu__btn">Импрессионизм</button> 
 
             <ul class="style-menu__submenu">
-              <li class="style-menu__submenu__item">
-                <a href="" class="link style-menu__link">Item1</a>
+              <li class="style-menu__submenu__item style-menu__submenu__item_monet">
+                <a href="" class="link style-menu__link">Моне</a>
               </li>
-              <li class="style-menu__submenu__item">
-                <a href="" class="link style-menu__link">Item2</a>
+
+              <li class="style-menu__submenu__item style-menu__submenu__item_sisley">
+                <a href="" class="link style-menu__link">Сислей</a>
+              </li>
+
+              <li class="style-menu__submenu__item style-menu__submenu__item_mane">
+                <a href="" class="link style-menu__link">Мане</a>
+              </li>
+
+              <li class="style-menu__submenu__item style-menu__submenu__item_renoir">
+                <a href="" class="link style-menu__link">Ренуар</a>
               </li>
             </ul>
           </li>
@@ -95,11 +119,20 @@
             <button class="style-menu__btn">Постимпрессионизм</button> 
 
             <ul class="style-menu__submenu">
-              <li class="style-menu__submenu__item">
-                <a href="" class="link style-menu__link">Item1</a>
+              <li class="style-menu__submenu__item style-menu__submenu__item_vanGogh">
+                <a href="" class="link style-menu__link">Ван Гог</a>
               </li>
-              <li class="style-menu__submenu__item">
-                <a href="" class="link style-menu__link">Item2</a>
+
+              <li class="style-menu__submenu__item style-menu__submenu__item_cezanne">
+                <a href="" class="link style-menu__link">Сезанн</a>
+              </li>
+
+              <li class="style-menu__submenu__item style-menu__submenu__item_gauguin">
+                <a href="" class="link style-menu__link">Гоген</a>
+              </li>
+
+              <li class="style-menu__submenu__item style-menu__submenu__item_seurat">
+                <a href="" class="link style-menu__link">Сёра</a>
               </li>
             </ul>
           </li>
@@ -108,11 +141,20 @@
             <button class="style-menu__btn">Авангард</button> 
 
             <ul class="style-menu__submenu">
-              <li class="style-menu__submenu__item">
-                <a href="" class="link style-menu__link">Item1</a>
+              <li class="style-menu__submenu__item style-menu__submenu__item_kandinsky">
+                <a href="" class="link style-menu__link">Кандинский</a>
               </li>
-              <li class="style-menu__submenu__item">
-                <a href="" class="link style-menu__link">Item2</a>
+
+              <li class="style-menu__submenu__item style-menu__submenu__item_marinetti">
+                <a href="" class="link style-menu__link">Маринетти</a>
+              </li>
+
+              <li class="style-menu__submenu__item style-menu__submenu__item_malevich">
+                <a href="" class="link style-menu__link">Малевич</a>
+              </li>
+
+              <li class="style-menu__submenu__item style-menu__submenu__item_picasso">
+                <a href="" class="link style-menu__link">Пикассо</a>
               </li>
             </ul>
           </li>
@@ -121,11 +163,20 @@
             <button class="style-menu__btn">Футуризм</button> 
 
             <ul class="style-menu__submenu">
-              <li class="style-menu__submenu__item">
-                <a href="" class="link style-menu__link">Item1</a>
+              <li class="style-menu__submenu__item style-menu__submenu__item_carra">
+                <a href="" class="link style-menu__link">Карра</a>
               </li>
-              <li class="style-menu__submenu__item">
-                <a href="" class="link style-menu__link">Item2</a>
+
+              <li class="style-menu__submenu__item style-menu__submenu__item_pratella">
+                <a href="" class="link style-menu__link">Прателла</a>
+              </li>
+
+              <li class="style-menu__submenu__item style-menu__submenu__item_severini">
+                <a href="" class="link style-menu__link">Северини</a>
+              </li>
+
+              <li class="style-menu__submenu__item style-menu__submenu__item_balla">
+                <a href="" class="link style-menu__link">Балла</a>
               </li>
             </ul>
           </li>

@@ -118,7 +118,7 @@ ul {
 
 .style-menu__item {
   position: relative;
-  width: 100%;
+  max-height: 25px;
   padding-right: 14px;
   background-image: url(../img/icon-arrow.svg);
   background-repeat: no-repeat;
@@ -152,7 +152,7 @@ ul {
 .style-menu__submenu {
   position: absolute;
   top: 184%;
-  width: inherit;
+  padding: 40px;
   visibility: hidden;
   opacity: 0;
   background-color: rgba(0, 0, 0, 0.4);
@@ -171,7 +171,112 @@ ul {
 }
 
 .style-menu__submenu__item {
-  padding: 10px 20px;
+  width: 220px;
+  padding: 10px 14px;
+}
+
+.style-menu__submenu__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.style-menu__submenu__item_tintoretto {
+  background-image: url(../img/dropdown-realism-tintoretto.png);
+  background-repeat: no-repeat;
+}
+
+.style-menu__submenu__item_frederick {
+  background-image: url(../img/dropdown-realism-frederick.png);
+  background-repeat: no-repeat;
+}
+
+.style-menu__submenu__item_leonardo {
+  background-image: url(../img/dropdown-realism-leonardo.png);
+  background-repeat: no-repeat;
+}
+
+.style-menu__submenu__item_verrocchio {
+  background-image: url(../img/dropdown-realism-verrocchio.png);
+  background-repeat: no-repeat;
+}
+
+.style-menu__submenu__item_monet {
+  background-image: url(../img/dropdown-impressionism-monet.png);
+  background-repeat: no-repeat;
+}
+
+.style-menu__submenu__item_sisley {
+  background-image: url(../img/dropdown-impressionism-sisley.png);
+  background-repeat: no-repeat;
+}
+
+.style-menu__submenu__item_mane {
+  background-image: url(../img/dropdown-impressionism-mane.png);
+  background-repeat: no-repeat;
+}
+
+.style-menu__submenu__item_renoir {
+  background-image: url(../img/dropdown-impressionism-renoir.png);
+  background-repeat: no-repeat;
+}
+
+.style-menu__submenu__item_vanGogh {
+  background-image: url(../img/dropdown-postImpressionism-vanGogh.png);
+  background-repeat: no-repeat;
+}
+
+.style-menu__submenu__item_cezanne {
+  background-image: url(../img/dropdown-postImpressionism-cezanne.png);
+  background-repeat: no-repeat;
+}
+
+.style-menu__submenu__item_gauguin {
+  background-image: url(../img/dropdown-postImpressionism-gauguin.png);
+  background-repeat: no-repeat;
+}
+
+.style-menu__submenu__item_seurat {
+  background-image: url(../img/dropdown-postImpressionism-seurat.png);
+  background-repeat: no-repeat;
+}
+
+.style-menu__submenu__item_kandinsky {
+  background-image: url(../img/dropdown-avantGarde-kandinsky.png);
+  background-repeat: no-repeat;
+}
+
+.style-menu__submenu__item_marinetti {
+  background-image: url(../img/dropdown-avantGarde-marinetti.png);
+  background-repeat: no-repeat;
+}
+
+.style-menu__submenu__item_malevich {
+  background-image: url(../img/dropdown-avantGarde-malevich.png);
+  background-repeat: no-repeat;
+}
+
+.style-menu__submenu__item_picasso {
+  background-image: url(../img/dropdown-avantGarde-picasso.png);
+  background-repeat: no-repeat;
+}
+
+.style-menu__submenu__item_carra {
+  background-image: url(../img/dropdown-futurism-carra.png);
+  background-repeat: no-repeat;
+}
+
+.style-menu__submenu__item_pratella {
+  background-image: url(../img/dropdown-futurism-pratella.png);
+  background-repeat: no-repeat;
+}
+
+.style-menu__submenu__item_severini {
+  background-image: url(../img/dropdown-futurism-severini.png);
+  background-repeat: no-repeat;
+}
+
+.style-menu__submenu__item_balla {
+  background-image: url(../img/dropdown-futurism-balla.png);
+  background-repeat: no-repeat;
 }
 
 .search {
