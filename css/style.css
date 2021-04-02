@@ -51,10 +51,37 @@ ul {
   text-decoration: none;
 }
 
+.link:hover {
+  color: #C283F3;
+}
+
+.link:active {
+  color: #7943A4;
+}
+
+.link:focus { 
+  outline: #7943A4 solid 2px;
+  outline-offset: 4px;
+}
+
+.btn:focus { 
+  outline: #7943A4 solid 2px;
+  outline-offset: 4px;
+}
+/* 
+.btn:focus {
+  color: #9D5CD0;
+} */
+
 .btn_img {
   padding: 0;
   border: none;
   background-color: rgba(0, 0, 0, 0);
+}
+
+.btn_img:focus { 
+  outline: #7943A4 solid 2px;
+  outline-offset: 4px;
 }
 
 .header {
@@ -118,10 +145,6 @@ ul {
 
 .style-menu__item {
   position: relative;
-  padding-right: 14px;
-  background-image: url(../img/icon-arrow.svg);
-  background-repeat: no-repeat;
-  background-position: 100% 60%;
 }
 
 .style-menu__item:not(:last-child) {
@@ -129,17 +152,15 @@ ul {
 }
 
 .style-menu__btn {
-  padding: 0;
+  padding-right: 14px;
   color: #fff;
   font-size: 18px;
   line-height: 25px;  
   border: none;
   background-color: rgba(0, 0, 0, 0);
-}
-
-.style-menu__btn:active,
-.style-menu__btn:focus {
-  outline: none;
+  background-image: url(../img/icon-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: 100% 60%;
 }
 
 .style-menu__link {
@@ -166,7 +187,7 @@ ul {
 }
 
 .simplebar-track.simplebar-vertical {
-  width: 5px;
+  width: 6px;
   background-color: #000;
 }
 
@@ -174,6 +195,7 @@ ul {
   height: 28px;
   opacity: 1 !important;
   background-color: #fff !important;
+  border-radius: 0;
 }
 
 .submenu_is-active {
