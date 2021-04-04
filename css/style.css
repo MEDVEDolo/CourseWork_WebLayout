@@ -26,7 +26,7 @@
 }
 
 * {
-  box-sizing: border-box
+  box-sizing: border-box;
 }
 
 body {
@@ -49,6 +49,7 @@ ul {
 .link {
   color: #9D5CD0;
   text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .link:hover {
@@ -64,14 +65,14 @@ ul {
   outline-offset: 4px;
 }
 
+.link_img {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
 .btn:focus { 
   outline: #7943A4 solid 2px;
   outline-offset: 4px;
 }
-/* 
-.btn:focus {
-  color: #9D5CD0;
-} */
 
 .btn_img {
   padding: 0;
@@ -81,7 +82,52 @@ ul {
 
 .btn_img:focus { 
   outline: #7943A4 solid 2px;
-  outline-offset: 4px;
+  outline-offset: 2px;
+}
+
+.input {
+  border: none;
+  outline: none;
+}
+
+input::-webkit-input-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+input::-moz-placeholder  {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+input:-moz-placeholder  {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+input:-ms-input-placeholder  {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+input:focus::-webkit-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+input:focus::-moz-placeholder    {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+input:focus:-moz-placeholder  {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+input:focus:-ms-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
 .header {
@@ -129,6 +175,15 @@ ul {
   background-position: left center;
 }
 
+.entry:hover {
+  background-image: url(../img/entry-hover.svg);
+}
+
+.entry:active {
+  color: #9D5CD0;
+  background-image: url(../img/entry-active.svg);
+}
+
 .header__bottom {
   background-color: rgba(0, 0, 0, 0.4);
 }
@@ -171,8 +226,8 @@ ul {
 
 .submenu {
   position: absolute;
-  top: 185%;
-  padding: 40px;
+  top: 178%;
+  padding: 40px 20px 40px 40px;
   visibility: hidden;
   opacity: 0;
   background-color: rgba(0, 0, 0, 0.4);
@@ -180,19 +235,52 @@ ul {
   -webkit-transition: .6s ease-in;
 }
 
+.submenu_is-active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.style-menu__item:hover .submenu {
+  visibility: visible;
+  opacity: 1;
+}
+
 .style-menu__submenu {
-  width: 300px;
-  height: 300px;
-  padding: 40px;
+  width: 240px;
+  height: 220px;
+  padding: 0 0 80px 0;
+}
+
+.style-menu__submenu__item:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 .submenu__link {
   display: block;
+  box-sizing: border-box !important ;
   padding: 10px 14px;
   color: #fff;
-  font-size: 18px;
-  line-height: 25px;
+  font-size: 14px;
+  line-height: 19px;
   background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-tap-highlight-color: rgba(194, 131, 243, 0.4);
+}
+
+.submenu__link:hover {
+  color: #fff;
+  border: 2px solid #9D5CD0;
+}
+
+.submenu__link:focus {
+  color: #fff;
+  border: 2px solid #9D5CD0;  
+  outline: none;
+}
+
+.submenu__link:active {
+  color: #fff;
+  border: 2px solid #D1A9F0;
 }
 
 .submenu__link_tintoretto {
@@ -275,34 +363,34 @@ ul {
   background-image: url(../img/dropdown-futurism-balla.png);
 }
 
+.simplebar-content-wrapper {
+  padding-right: 20px;
+}
+
 .simplebar-track.simplebar-vertical {
-  width: 6px;
+  width: 2px;
   background-color: #000;
 }
 
-.simplebar-scrollbar:before {
+.simplebar-scrollbar::before {
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
   height: 28px;
-  opacity: 1 !important;
-  background-color: #fff !important;
+  opacity: 1;
+  background-color: #fff;
   border-radius: 0;
 }
 
-.submenu_is-active {
-  visibility: visible;
+.simplebar-track.simplebar-vertical .simplebar-scrollbar::before {
+  top: 0;
+  bottom: 0;
+}
+
+.simplebar-scrollbar.simplebar-visible::before {
   opacity: 1;
-}
-
-.style-menu__item:hover .submenu {
-  visibility: visible;
-  opacity: 1;
-}
-
-.style-menu__submenu__item {
-  width: 220px;
-}
-
-.style-menu__submenu__item:not(:last-child) {
-  margin-bottom: 20px;
+  background-color: #9D5CD0;
 }
 
 .search {
@@ -311,13 +399,21 @@ ul {
   margin-left: auto;
 }
 
-.search__btn_img {
+.search:hover .search__btn {
+  background-image: url(../img/search-hover.svg);
+}
+
+.search:hover .search__input {
+  border-color: #C283F3;
+}
+
+.search__btn {
   width: 26px;
   height: 26px;
   margin-right: 10px;
   background-image: url(../img/search.svg);
   background-repeat: no-repeat;
-  background-position: bottom right;
+  background-position: center;
 }
 
 .search__input {
@@ -326,8 +422,18 @@ ul {
   font-size: 18px;
   line-height: 25px;
   background: transparent;
-  border: none;
   border-bottom: rgba(255, 255, 255, 0.85) solid 1px;
+  caret-color: #C283F3;
+}
+
+/* Работает */
+.search__input:focus {
+  border-color: #C283F3;
+}
+
+/* Не работает */
+.search__input:focus .search__btn {
+  background-image: url(../img/search-hover.svg) !important;
 }
 
 .search__input::-webkit-input-placeholder {
