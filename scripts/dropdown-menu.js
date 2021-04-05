@@ -1,5 +1,7 @@
 window.addEventListener('DOMContentLoaded', function() {
-    document.querySelector('.style-menu__btn').addEventListener('click', function() {
-        document.querySelector('.style-menu__submenu').classList.toggle('.style-menu__submenu_is-active')
-    })
+   document.querySelectorAll('.style-menu__btn').forEach(function(el) {
+       el.addEventListener('click', function(event) {
+        document.querySelector('.submenu').classList.toggle('submenu_is-active')
+       })
+   })
 })

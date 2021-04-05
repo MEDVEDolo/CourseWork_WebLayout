@@ -52,6 +52,15 @@ ul {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+.link:focus:not(:focus-visible) {
+  outline: 0;
+}
+
+.link:focus-visible {
+  outline: #7943A4 solid 2px;
+  outline-offset: 4px;
+}
+
 .link:hover {
   color: #C283F3;
 }
@@ -60,16 +69,15 @@ ul {
   color: #7943A4;
 }
 
-.link:focus { 
-  outline: #7943A4 solid 2px;
-  outline-offset: 4px;
-}
-
 .link_img {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-.btn:focus { 
+.btn:focus:not(:focus-visible) {
+  outline: 0;
+}
+
+.btn:focus-visible {
   outline: #7943A4 solid 2px;
   outline-offset: 4px;
 }
@@ -78,11 +86,6 @@ ul {
   padding: 0;
   border: none;
   background-color: rgba(0, 0, 0, 0);
-}
-
-.btn_img:focus { 
-  outline: #7943A4 solid 2px;
-  outline-offset: 2px;
 }
 
 .input {
@@ -426,14 +429,8 @@ input:focus:-ms-input-placeholder {
   caret-color: #C283F3;
 }
 
-/* Работает */
 .search__input:focus {
   border-color: #C283F3;
-}
-
-/* Не работает */
-.search__input:focus .search__btn {
-  background-image: url(../img/search-hover.svg) !important;
 }
 
 .search__input::-webkit-input-placeholder {
