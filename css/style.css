@@ -88,6 +88,15 @@ ul {
   background-color: rgba(0, 0, 0, 0);
 }
 
+.btn_img:focus:not(:focus-visible) {
+  outline: 0;
+}
+
+.btn_img:focus-visible {
+  outline: #7943A4 solid 2px;
+  outline-offset: 4px;
+}
+
 .input {
   border: none;
   outline: none;
@@ -418,6 +427,10 @@ input:focus:-ms-input-placeholder {
   background-image: url(../img/search.svg);
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.search__btn:hover {
+  outline: #7943A4 solid 2px;
 }
 
 .search__label {
