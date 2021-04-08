@@ -235,7 +235,7 @@ input:focus:-ms-input-placeholder {
   opacity: 0;
   background-color: rgba(0, 0, 0, 0.4);
   transition-property: opacity;
-  -webkit-transition: .6s ease-in;
+  -webkit-transition: 1s ease-in-out;
 }
 
 .submenu_is-active {
