@@ -141,7 +141,7 @@ input:focus:-ms-input-placeholder {
   background-color: #000;
 }
 
-.header__top__container {
+.header__container_top {
   display: flex;
   align-items: center;
   padding: 28px 20px;
@@ -191,7 +191,7 @@ input:focus:-ms-input-placeholder {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-.header__bottom__container {
+.header__container_bottom {
   display: flex;
   align-items: center;
   padding: 23px 20px 21px 20px;
@@ -254,7 +254,7 @@ input:focus:-ms-input-placeholder {
   padding: 0 0 80px 0;
 }
 
-.style-menu__submenu__item:not(:last-child) {
+.submenu__item:not(:last-child) {
   margin-bottom: 20px;
 }
 
