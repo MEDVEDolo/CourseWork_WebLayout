@@ -420,6 +420,11 @@ input:focus:-ms-input-placeholder {
   background-position: center;
 }
 
+.search__label {
+  display: flex;
+  align-items: center;
+}
+
 .search__input {
   min-width: 218px;
   padding: 0;
