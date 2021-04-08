@@ -260,7 +260,8 @@ input:focus:-ms-input-placeholder {
 
 .submenu__link {
   display: block;
-  box-sizing: border-box !important ;
+  width: 220px;
+  height: 40px;
   padding: 10px 14px;
   color: #fff;
   font-size: 14px;
