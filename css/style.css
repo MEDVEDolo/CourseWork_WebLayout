@@ -261,11 +261,6 @@ input:focus:-ms-input-placeholder {
   opacity: 1;
 }
 
-.style-menu__item:hover .submenu {
-  visibility: visible;
-  opacity: 1;
-}
-
 .style-menu__submenu {
   width: 240px;
   height: 220px;
