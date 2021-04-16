@@ -53,6 +53,8 @@ ul {
   outline-offset: 4px;
   transition-property: color;
   -webkit-transition: .5s ease-in-out;
+  outline-color: #7943A4;
+  outline-width: 2px;
 }
 
 .link:focus:not(:focus-visible) {
@@ -87,6 +89,9 @@ ul {
 .btn {
   transition-property: color;
   -webkit-transition: .5s ease-in-out; 
+  outline-offset: 4px;
+  outline-color: #7943A4;
+  outline-width: 2px;
 }
 
 .btn:hover {
@@ -103,13 +108,14 @@ ul {
 
 .btn:focus-visible {
   outline: #7943A4 solid 2px;
-  outline-offset: 4px;
 }
 
 .btn_img {
   padding: 0;
   border: none;
   background-color: rgba(0, 0, 0, 0);
+  outline-color: #7943A4;
+  outline-width: 2px;
   outline-offset: 4px;
 }
 
