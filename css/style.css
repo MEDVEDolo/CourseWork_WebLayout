@@ -255,7 +255,9 @@ input:focus:-ms-input-placeholder {
   background-color: rgba(0, 0, 0, 0);
   background-repeat: no-repeat;
   background-position: right center;
-  transition: color .5s ease-in-out;
+  transition-property: color, background-image;
+  transition-duration: .5s;
+  transition-timing-function: ease-in-out;
   cursor: pointer;
 }
 
@@ -473,8 +475,7 @@ input:focus:-ms-input-placeholder {
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
-  transition-property: background-image;
-  -webkit-transition: .5s ease-in-out;
+  transition: background-image .5s ease-in-out;
 }
 
 .search__label {
