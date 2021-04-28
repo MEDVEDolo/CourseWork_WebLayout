@@ -40,6 +40,10 @@ ul {
   list-style: none;
 }
 
+p {
+  margin: 0;
+}
+
 .container {
   max-width: 1640px;
   margin: 0 auto;
@@ -90,6 +94,7 @@ ul {
   outline-offset: 4px;
   outline-color: #7943A4;
   outline-width: 2px;
+  cursor: pointer;
 }
 
 .btn:hover {
@@ -258,7 +263,6 @@ input:focus:-ms-input-placeholder {
   transition-property: color, background-image;
   transition-duration: .5s;
   transition-timing-function: ease-in-out;
-  cursor: pointer;
 }
 
 .style-menu__btn_no-active {
@@ -500,4 +504,57 @@ input:focus:-ms-input-placeholder {
 
 .search__input::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.85);
+}
+
+.hero-block {
+  background-image: url(../img/birmingham-museums-trust-1920.jpg);
+  background-repeat: no-repeat;
+  animation: pulsing 80s infinite linear;
+}
+
+  @keyframes pulsing {
+    0% {
+      background-size: 100%;
+    }
+
+    50% {
+      background-size: 150%;
+    }
+
+    100% {
+      background-size: 100%;
+    }
+  }
+
+.container_hero-block {
+  padding: 63px 0 122px 0;
+}
+
+.hero-block__title {
+  max-width: 35%;
+  margin: 0;
+  color: #fff;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 98px;
+}
+
+.hero-block__text {
+  max-width: 35%;
+  margin-bottom: 92px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.hero-block__btn {
+  padding: 22px 35px;
+  border: none;
+  border-radius: 100px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  background-color: #9D5CD0;
 }
