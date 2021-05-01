@@ -176,6 +176,7 @@ input:focus:-ms-input-placeholder {
 }
 
 .header {
+  position: relative;
   color: #fff;
 }
 
@@ -231,6 +232,8 @@ input:focus:-ms-input-placeholder {
 }
 
 .header__bottom {
+  position: absolute;
+  width: 100%;
   background-color: rgba(0, 0, 0, 0.4);
 }
 
@@ -527,7 +530,7 @@ input:focus:-ms-input-placeholder {
   }
 
 .container_hero-block {
-  padding: 63px 0 122px 0;
+  padding: 133px 0 122px 0;
 }
 
 .hero-block__title {
@@ -550,11 +553,27 @@ input:focus:-ms-input-placeholder {
 
 .hero-block__btn {
   padding: 22px 35px;
-  border: none;
+  border: #9D5CD0 solid 3px;
   border-radius: 100px;
   color: #fff;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
   background-color: #9D5CD0;
+  outline: none;
+}
+
+.hero-block__btn:hover {
+  color: #fff;
+  border-color: #D1A9F0;
+}
+
+.hero-block:focus-visible {
+  outline: none;
+}
+
+.hero-block__btn:active {
+  color: #fff;
+  border-color: #D1A9F0;
+  background-color: #7943A4;
 }
