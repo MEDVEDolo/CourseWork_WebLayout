@@ -552,6 +552,7 @@ input:focus:-ms-input-placeholder {
 }
 
 .hero-block__btn {
+  position: relative;
   padding: 22px 35px;
   border: #9D5CD0 solid 3px;
   border-radius: 100px;
@@ -561,6 +562,10 @@ input:focus:-ms-input-placeholder {
   line-height: 24px;
   background-color: #9D5CD0;
   outline: none;
+  transition-property: border, background-color;
+  transition-duration: .5s;
+  transition-timing-function: ease-in-out;
+  cursor: pointer;
 }
 
 .hero-block__btn:hover {
@@ -568,8 +573,21 @@ input:focus:-ms-input-placeholder {
   border-color: #D1A9F0;
 }
 
-.hero-block:focus-visible {
-  outline: none;
+
+.hero-block__btn:focus-visible::after {
+  content: " ";
+  position: absolute;
+  width: 324px;
+  height: 79px;
+  display: block;
+  top: 0;
+  left: -2.3%;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  text-align: center;
+  border: 2px solid #C283F3;
+  border-radius: 100px;
 }
 
 .hero-block__btn:active {
