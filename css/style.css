@@ -175,6 +175,13 @@ input:focus:-ms-input-placeholder {
   transition: opacity 0.3s ease;
 }
 
+.title {
+  margin: 0;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 65px;
+}
+
 .header {
   position: relative;
   color: #fff;
@@ -594,4 +601,18 @@ input:focus:-ms-input-placeholder {
   color: #fff;
   border-color: #D1A9F0;
   background-color: #7943A4;
+}
+
+.container_about-us {
+  padding: 80px 160px;
+}
+
+.about-us__title {
+  margin-bottom: 30px;
+}
+
+.about-us__text {
+  max-width: 82%;
+  font-size: 16px;
+  line-height: 32px;
 }
