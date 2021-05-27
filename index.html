@@ -15,6 +15,14 @@
 
   <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css"/>
 
+  <link rel="stylesheet" href="css/choices.min.css">
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" href="css/lightbox.min.css">
+
   <link rel="stylesheet" href="css/style.css">
 
   <script src="scripts/dropdown-menu.js"></script>
@@ -263,13 +271,178 @@
     </section>
 
     <section class="gallery">
+      <div class="container container_gallery">
+        <div class="gallery__content">
+          <h3 class="title gallery__title">Галерея</h3>
 
+          <p class="gallery__select-text">Фильтровать по:</p>
+
+          <select name="Gallery filter" class="custom-select">
+            <option value="author">Автор</option>
+
+            <option value="direction">Направление</option>
+
+            <option value="technique">Техника</option>
+          </select>
+
+          <script src="scripts/choices.min.js"></script>
+
+          <script src="scripts/select.js"></script>
+
+          <p class="gallery__text">
+            Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний 
+            <a href="#" class="link gallery__link">авторизуйтесь,</a> либо воспользуйтесь лицензией. 
+          </p>
+        </div>
+
+        <div class="gallery__slider">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <ul class="slider__list">
+                  <li class="slider__item">
+                    <a href="img/art-gallery1-1920.png" data-lightbox="art-gallery2">
+                      <img src="img/art-gallery1-1920.png" alt="" class="gallery__img">
+                    </a>
+                  </li>
+
+                  <li class="slider__item">
+                    <a href="img/art-gallery2-1920.png" data-lightbox="art-gallery2">
+                      <img src="img/art-gallery2-1920.png" alt="" class="gallery__img">
+                    </a>
+                  </li>
+
+                  <li class="slider__item">
+                    <a href="img/art-gallery3-1920.png" data-lightbox="art-gallery2">
+                      <img src="img/art-gallery3-1920.png" alt="" class="gallery__img">
+                    </a>
+                  </li>
+
+                  <li class="slider__item">
+                    <a href="img/art-gallery4-1920.png" data-lightbox="art-gallery2">
+                      <img src="img/art-gallery4-1920.png" alt="" class="gallery__img">
+                    </a>
+                  </li>
+
+                  <li class="slider__item">
+                    <a href="img/art-gallery5-1920.png" data-lightbox="art-gallery2">
+                      <img src="img/art-gallery5-1920.png" alt="" class="gallery__img">
+                    </a>
+                  </li>
+
+                  <li class="slider__item">
+                    <a href="img/art-gallery6-1920.png" data-lightbox="art-gallery2">
+                      <img src="img/art-gallery6-1920.png" alt="" class="gallery__img">
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="swiper-slide">
+                <ul class="slider__list">
+                  <li class="slider__item">
+                    <a href="img/art-gallery7-1920.png" data-lightbox="art-gallery2">
+                      <img src="img/art-gallery7-1920.png" alt="" class="gallery__img">
+                    </a>
+                  </li>
+
+                  <li class="slider__item">
+                    <a href="img/art-gallery8-1920.png" data-lightbox="art-gallery2">
+                      <img src="img/art-gallery8-1920.png" alt="" class="gallery__img">
+                    </a>
+                  </li>
+
+                  <li class="slider__item">
+                    <a href="img/art-gallery9-1920.png" data-lightbox="art-gallery2">
+                      <img src="img/art-gallery9-1920.png" alt="" class="gallery__img">
+                    </a>
+                  </li>
+
+                  <li class="slider__item">
+                    <a href="img/art-gallery10-1920.png" data-lightbox="art-gallery2">
+                      <img src="img/art-gallery10-1920.png" alt="" class="gallery__img">
+                    </a>
+                  </li>
+
+                  <li class="slider__item">
+                    <a href="img/art-gallery11-1920.png" data-lightbox="art-gallery2">
+                      <img src="img/art-gallery11-1920.png" alt="" class="gallery__img">
+                    </a>
+                  </li>
+
+                  <li class="slider__item">
+                    <a href="img/art-gallery12-1920.png" data-lightbox="art-gallery2">
+                      <img src="img/art-gallery12-1920.png" alt="" class="gallery__img">
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="swiper-slide">
+                <ul class="slider__list">
+                  <li class="slider__item">
+                    <a href="img/art-gallery13-1920.png" data-lightbox="art-gallery3">
+                      <img src="img/art-gallery13-1920.png" alt="" class="gallery__img">
+                    </a>
+                  </li>
+
+                  <li class="slider__item">
+                    <a href="img/art-gallery14-1920.png" data-lightbox="art-gallery3">
+                      <img src="img/art-gallery14-1920.png" alt="" class="gallery__img">
+                    </a>
+                  </li>
+
+                  <li class="slider__item">
+                    <a href="img/art-gallery15-1920.png" data-lightbox="art-gallery3">
+                      <img src="img/art-gallery15-1920.png" alt="" class="gallery__img">
+                    </a>
+                  </li>
+
+                  <li class="slider__item">
+                    <a href="img/art-gallery16-1920.png" data-lightbox="art-gallery3">
+                      <img src="img/art-gallery16-1920.png" alt="" class="gallery__img">
+                    </a>
+                  </li>
+
+                  <li class="slider__item">
+                    <a href="img/art-gallery17-1920.png" data-lightbox="art-gallery3">
+                      <img src="img/art-gallery17-1920.png" alt="" class="gallery__img">
+                    </a>
+                  </li>
+
+                  <li class="slider__item">
+                    <a href="img/art-gallery18-1920.png" data-lightbox="art-gallery3">
+                      <img src="img/art-gallery18-1920.png" alt="" class="gallery__img">
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+          
+            <div class="swiper-button-prev"></div>
+
+            <div class="swiper-button-next"></div>
+          
+            <div class="swiper-scrollbar"></div>
+          </div>
+
+          <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+
+          <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        
+          <script src="scripts/slider.js"></script>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer>
 
   </footer>
+
+  <script src="scripts/lightbox-plus-jquery.min.js"></script>
 </body>
 
 </html>
