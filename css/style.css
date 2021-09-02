@@ -704,6 +704,10 @@ input:focus:-ms-input-placeholder {
   background-color: rgba(0, 0, 0, 0);
 }
 
+.choices__item .choices__item--choice .is-selected .choices__item--selectable {
+  display: none !important;
+}
+
 .gallery__text {
   color: #fff;
   font-weight: 600;
