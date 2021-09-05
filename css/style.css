@@ -689,7 +689,12 @@ input:focus:-ms-input-placeholder {
   display: none;
 }
 
-.choices__item:not(:first-child) {
+
+.is-selected {
+  display: none;
+}
+
+.choices__item--choice {
   border-bottom: 1px solid #999;
 }
 
@@ -735,7 +740,7 @@ input:focus:-ms-input-placeholder {
   padding-top: 22px;
 }
 
-.swiper-container {
+.swiper {
   width: 1150px;
   height: 810px;
 }
