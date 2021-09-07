@@ -259,7 +259,15 @@ input:focus:-ms-input-placeholder {
 }
 
 .style-menu__item:not(:last-child) {
-  margin-right: 97px;
+  margin-right: 92px;
+}
+
+.style-menu__item:nth-child(3) {
+  margin-right: 95px;
+}
+
+.style-menu__item:nth-child(4) {
+  margin-right: 94px;
 }
 
 .style-menu__btn {
