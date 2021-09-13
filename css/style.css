@@ -638,6 +638,8 @@ input:focus:-ms-input-placeholder {
 }
 
 .gallery__content {
+  display: flex;
+  flex-direction: column;
   max-width: 24.7%;
   margin-right: 50px;
 }
