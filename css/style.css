@@ -783,6 +783,10 @@ input:focus:-ms-input-placeholder {
   height: 810px;
 }
 
+.swiper-scrollbar {
+  display: none;
+}
+
 .slider__list {
   display: flex;
   flex-wrap: wrap;
