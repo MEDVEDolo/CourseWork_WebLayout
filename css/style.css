@@ -936,3 +936,54 @@ input:focus:-ms-input-placeholder {
   line-height: 32px;
   color: #fff;
 }
+
+.container_catalog {
+  padding-top: 80px;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.catalog__title {
+  margin-right: 39px;
+}
+
+.catalog__list-btn {
+  display: flex;
+  flex-direction: row;
+}
+
+.catalog__item-btn {
+  margin-right: 50px;
+}
+
+.catalog__btn {
+  width: 46px;
+  height: 46px;
+}
+
+.btn_france {
+  background-image: url(../img/btn-france.png);
+}
+
+.btn_germany {
+  background-image: url(../img/btn-germany.png);
+}
+
+.btn_italy {
+  background-image: url(../img/btn-italy.png);
+}
+
+.btn_russia {
+  background-image: url(../img/btn-russia.png);
+}
+
+.btn_belgium {
+  background-image: url(../img/btn-belgium.png);
+}
+
+.catalog__text {
+  max-width: 68%;
+}
