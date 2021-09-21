@@ -42,6 +42,8 @@ ul {
 
 .text {
   margin: 0;
+  font-size: 16px;
+  line-height: 32px;
 }
 
 .container {
@@ -622,8 +624,6 @@ input:focus:-ms-input-placeholder {
 
 .about-us__text {
   max-width: 74%;
-  font-size: 16px;
-  line-height: 32px;
 }
 
 .gallery {
