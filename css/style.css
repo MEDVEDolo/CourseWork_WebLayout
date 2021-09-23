@@ -986,4 +986,36 @@ input:focus:-ms-input-placeholder {
 
 .catalog__text {
   max-width: 68%;
+  margin-bottom: 50px;
+}
+
+.catalog__content {
+  display: flex;
+}
+
+.catalog__accordion-content {
+  max-width: 47%;
+  margin-right: 50px;
+}
+
+.catalog__img {
+  margin-bottom: 30px;
+}
+
+.catalog__accordion {
+  width: 100%;
+}
+
+.ui-accordion .ui-accordion-content {
+  overflow: hidden;
+}
+
+.accordion__content {
+  max-height: 338px;
+}
+
+.accordion__list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
