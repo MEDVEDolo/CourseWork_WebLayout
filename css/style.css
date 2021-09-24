@@ -1002,8 +1002,51 @@ input:focus:-ms-input-placeholder {
   margin-bottom: 30px;
 }
 
+.accordion-content__title {
+  margin-bottom: 15px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33px;
+}
+
+.accordion-content__date {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 12px;
+  line-height: 16px;
+  color: #999;
+}
+
+.accordion-content__text {
+  font-size: 16px;
+  line-height: 32px;
+}
+
 .catalog__accordion {
   width: 100%;
+}
+
+.accordion__title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  border-right: none;
+  border-left: none;
+  border-radius: 0;
+}
+
+.ui-accordion .ui-accordion-header{
+  padding: 32px 0;
+}
+
+.ui-state-default {
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom: none;
+}
+
+.ui-state-active {
+  color: #000;
+  border-bottom: 1px solid #003eff;;
 }
 
 .ui-accordion .ui-accordion-content {
@@ -1012,6 +1055,7 @@ input:focus:-ms-input-placeholder {
 
 .accordion__content {
   max-height: 338px;
+  border: none;
 }
 
 .accordion__list {
