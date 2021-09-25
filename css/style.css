@@ -1053,6 +1053,22 @@ input:focus:-ms-input-placeholder {
   overflow: hidden;
 }
 
+.ui-icon {
+  float: right;
+  width: 50px;
+  height: 50px;
+  background-image: url(../img/btn-close.png);
+  background-position: center center;
+}
+
+.ui-state-hover .ui-icon{
+  background-image: url(../img/btn-close-hover.png);
+}
+
+.ui-state-active .ui-icon{
+  background-image: url(../img/btn-open.png);
+}
+
 .accordion__content {
   max-height: 338px;
   border: none;
