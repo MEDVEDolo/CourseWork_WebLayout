@@ -960,8 +960,41 @@ input:focus:-ms-input-placeholder {
 }
 
 .catalog__btn {
+  position: relative;
   width: 46px;
   height: 46px;
+  border-radius: 100px;
+  background-size: cover;
+  box-shadow: 0px 0px 20px rgba(157, 92, 208, 0);
+  cursor: pointer;
+  transition: box-shadow .5s ease-in-out;
+}
+
+.catalog__btn:hover {
+  box-shadow: 0px 0px 20px rgba(157, 92, 208, 0.7);
+}
+
+.catalog__btn:focus {
+  outline: none;
+  box-shadow: 0px 0px 20px rgba(157, 92, 208, 0.7);
+}
+
+/* .catalog__btn:focus-visible::after {
+  content: " ";
+  position: absolute;
+  width: 66px;
+  height: 66px;
+  display: block;
+  top: -27%;
+  right: -28%;
+  text-align: center;
+  border: 2px solid #C283F3;
+  border-radius: 100px;
+  outline: none;
+} */
+
+.catalog__btn:active {
+  border: 2px solid #7943A4;
 }
 
 .btn_france {
@@ -1030,6 +1063,7 @@ input:focus:-ms-input-placeholder {
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
+  border-top: 1px solid #7943A4;
   border-right: none;
   border-left: none;
   border-radius: 0;
@@ -1046,7 +1080,8 @@ input:focus:-ms-input-placeholder {
 
 .ui-state-active {
   color: #000;
-  border-bottom: 1px solid #003eff;;
+  border-bottom: 1px solid #7943A4;
+  color: #7943A4;
 }
 
 .ui-accordion .ui-accordion-content {
@@ -1059,6 +1094,10 @@ input:focus:-ms-input-placeholder {
   height: 50px;
   background-image: url(../img/btn-close.png);
   background-position: center center;
+}
+
+.ui-state-hover {
+  color: #9D5CD0;
 }
 
 .ui-state-hover .ui-icon{
