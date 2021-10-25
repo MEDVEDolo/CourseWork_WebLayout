@@ -1144,12 +1144,15 @@ input:focus:-ms-input-placeholder {
 }
 
 .accordion__content {
-  max-height: 338px;
+  max-height: 200px;
   border: none;
 }
 
 .accordion__list {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  columns: 3;
+}
+
+.accordion__btn {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
 }
