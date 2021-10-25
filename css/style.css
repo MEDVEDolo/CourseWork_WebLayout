@@ -938,12 +938,13 @@ input:focus:-ms-input-placeholder {
 }
 
 .container_catalog {
-  padding: 80px 0;
+  padding: 83px 20px;
 }
 
 .title-container {
   display: flex;
   flex-direction: row;
+  margin-bottom: 15px;
 }
 
 .catalog__title {
@@ -957,6 +958,7 @@ input:focus:-ms-input-placeholder {
 
 .catalog__item-btn {
   margin-right: 50px;
+  padding-top: 10px;
 }
 
 .catalog__btn {
@@ -1030,7 +1032,7 @@ input:focus:-ms-input-placeholder {
 
 .catalog__text {
   max-width: 68%;
-  margin-bottom: 50px;
+  margin-bottom: 38px;
 }
 
 .catalog__content {
@@ -1047,7 +1049,7 @@ input:focus:-ms-input-placeholder {
 }
 
 .accordion-content__title {
-  margin-bottom: 15px;
+  margin-bottom: 6px;
   font-weight: 600;
   font-size: 24px;
   line-height: 33px;
@@ -1055,7 +1057,7 @@ input:focus:-ms-input-placeholder {
 
 .accordion-content__date {
   display: block;
-  margin-bottom: 15px;
+  margin-bottom: 6px;
   font-size: 12px;
   line-height: 16px;
   color: #999;
@@ -1086,7 +1088,7 @@ input:focus:-ms-input-placeholder {
 }
 
 .ui-accordion .ui-accordion-header{
-  padding: 32px 0;
+  padding: 44px 0 35px 0;
 }
 
 .ui-state-default {
@@ -1099,6 +1101,7 @@ input:focus:-ms-input-placeholder {
 }
 
 .ui-accordion .ui-accordion-content {
+  padding: 0;
   overflow: hidden;
 }
 
@@ -1121,6 +1124,9 @@ input:focus:-ms-input-placeholder {
 }
 
 .accordion__title__text {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
   transition-property: background-color, color;
   transition-duration: .5s;
   transition-timing-function: ease-in-out;
@@ -1144,15 +1150,19 @@ input:focus:-ms-input-placeholder {
 }
 
 .accordion__content {
-  max-height: 200px;
+  height: auto !important;
   border: none;
 }
 
 .accordion__list {
+  padding: 28px 0;
   columns: 3;
 }
 
 .accordion__btn {
+  padding: 0;
+  font-size: 16px;
+  line-height: 32px;
   background-color: rgba(0, 0, 0, 0);
   border: none;
 }
