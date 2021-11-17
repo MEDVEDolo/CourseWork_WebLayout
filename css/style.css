@@ -1157,6 +1157,7 @@ input:focus:-ms-input-placeholder {
 .accordion__list {
   padding: 28px 0;
   columns: 3;
+  column-width: 28px;
 }
 
 .accordion__btn {
@@ -1165,4 +1166,8 @@ input:focus:-ms-input-placeholder {
   line-height: 32px;
   background-color: rgba(0, 0, 0, 0);
   border: none;
+}
+
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
+  font-family: Open Sans;
 }
