@@ -1171,3 +1171,47 @@ input:focus:-ms-input-placeholder {
 .ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
   font-family: Open Sans;
 }
+
+.empty-contetn {
+  display: flex;
+  padding: 25px 0;
+}
+
+.empty__box_out {
+  margin-right: 24px;
+  padding: 12px;
+  border: 2px solid #B7B7B7;
+}
+
+.empty__box_in {
+  width: 251px;
+  height: 165px;
+  background-color: #B7B7B7;
+}
+
+.empty__content {
+  max-width: 33%;
+  padding: 40px 0;
+}
+
+.empty__title {
+  margin-bottom: 5px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px
+}
+
+.empty__text {
+  margin-bottom: 5px;
+  line-height: 22px;
+}
+
+.ui-widget-content a {
+  color: #9D5CD0;
+}
+
+.empty__link {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+}
