@@ -10,6 +10,15 @@ window.addEventListener('DOMContentLoaded', function() {
  
                 el.classList.add('catalog__btn__is-active')
             }
+
+            document.querySelectorAll('.catalog__content').forEach(function(el) {
+                el.classList.add('catalog__content_non-active');
+            })
+
+            var countryClass = el.classList[2];
+            var countryName = countryClass.substr(4);
+
+            document.querySelector(`.catalog__content_${countryName}`).classList.remove('catalog__content_non-active');
         })
     })
  })

@@ -951,12 +951,12 @@ input:focus:-ms-input-placeholder {
   margin-right: 39px;
 }
 
-.catalog__list-btn {
+.catalog-btn__list {
   display: flex;
   flex-direction: row;
 }
 
-.catalog__item-btn {
+.catalog-btn__item {
   margin-right: 50px;
   padding-top: 10px;
 }
@@ -978,12 +978,13 @@ input:focus:-ms-input-placeholder {
   width: 66px;
   height: 66px;
   display: block;
-  top: -27%;
-  right: -28%;
+  left: 50%;
+  top: 50%;
   text-align: center;
   border: 2px solid rgba(255, 255, 128, 0);
   border-radius: 100px;
   outline: none;
+  transform: translate(-50%, -50%);
   transition-property: border-color;
   transition-duration: .5s;
   transition-timing-function: ease-in-out;
@@ -1039,6 +1040,10 @@ input:focus:-ms-input-placeholder {
   display: flex;
 }
 
+.catalog__content_non-active {
+  display: none;
+}
+
 .catalog__accordion-content {
   max-width: 47%;
   margin-right: 50px;
@@ -1072,7 +1077,7 @@ input:focus:-ms-input-placeholder {
   width: 100%;
 }
 
-.accordion__title {
+.accordion__data {
   margin: -1px -1px 0 0 !important;
   font-weight: 600;
   font-size: 24px;
@@ -1085,6 +1090,10 @@ input:focus:-ms-input-placeholder {
   transition-property: border, background-color, color;
   transition-duration: .5s;
   transition-timing-function: ease-in-out;
+}
+
+.ui-widget {
+  font-family: 'Open Sans';
 }
 
 .ui-accordion .ui-accordion-header{
@@ -1123,7 +1132,7 @@ input:focus:-ms-input-placeholder {
   outline: none;
 }
 
-.accordion__title__text {
+.accordion__data__text {
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
@@ -1132,7 +1141,7 @@ input:focus:-ms-input-placeholder {
   transition-timing-function: ease-in-out;
 }
 
-.ui-state-focus .accordion__title__text {
+.ui-state-focus .accordion__data__text {
   color: #fff;
   background-color: #9D5CD0;
 }
