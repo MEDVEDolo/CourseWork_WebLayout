@@ -1215,3 +1215,7 @@ input:focus:-ms-input-placeholder {
   font-size: 16px;
   line-height: 22px;
 }
+
+.catalog__accordion-content_non-active {
+  display: none;
+}
