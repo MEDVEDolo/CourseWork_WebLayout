@@ -1163,7 +1163,6 @@ input:focus:-ms-input-placeholder {
 }
 
 .accordion__content {
-  height: auto !important;
   border: none;
 }
 
@@ -1179,6 +1178,10 @@ input:focus:-ms-input-placeholder {
   line-height: 32px;
   background-color: rgba(0, 0, 0, 0);
   border: none;
+}
+
+.accordion__btn_active {
+  color: #9D5CD0;
 }
 
 .ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
