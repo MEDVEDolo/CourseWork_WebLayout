@@ -1049,7 +1049,7 @@ input:focus:-ms-input-placeholder {
 }
 
 .catalog__accordion-content {
-  max-width: 47%;
+  max-width: 46.5%;
   margin-right: 50px;
 }
 
@@ -1130,6 +1130,7 @@ input:focus:-ms-input-placeholder {
 .ui-state-hover {
   color: #9D5CD0;
   border-color: #9D5CD0;
+  z-index: 2;
 }
 
 .ui-state-focus {
@@ -1256,12 +1257,16 @@ input:focus:-ms-input-placeholder {
   display: flex;
   flex-direction: column;
   max-width: 30%;
-  height: 700px;
+  min-height: 700px;
   margin-bottom: 50px;
 }
 
 .developments__item_is-close:nth-child(n+4) {
   display: none;
+}
+
+.developments__item_empty {
+  visibility: hidden;
 }
 
 
