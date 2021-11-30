@@ -1341,3 +1341,36 @@ input:focus:-ms-input-placeholder {
   transition-timing-function: ease-in-out;
   cursor: pointer;
 }
+
+.editions {
+  background-image: url(../img/editions-background-1920.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+
+.editions__content {
+  display: flex;
+  flex-direction: row;
+}
+
+.editions__checkbox-container {
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
+
+.editions__pris {
+  border: none;
+}
+
+.pris__container {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 6px;
+}
+
+.pris__input {
+  max-width: 74px;
+  min-height: 40px;
+  background-color: rgba(157, 92, 208, 0.5);;
+}
